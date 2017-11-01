@@ -1,8 +1,9 @@
 {
-  "name": "react-vis-force",
-  "version": "0.3.1",
+  "name": "@mj/react-vis-force",
+  "version": "0.3.2",
   "main": "./dist/react-vis-force.js",
   "homepage": "http://uber.github.io/react-vis-force",
+  "repository": "maddijoyce/react-vis-force",
   "license": "MIT",
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",

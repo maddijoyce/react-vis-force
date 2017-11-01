@@ -282,12 +282,15 @@ export default class ForceGraph extends PureComponent {
         }));
 
         if ((showLabels || showLabel) && nodePosition) {
+          const { fontSize, ...spreadableLabelStyle } = labelStyle;
           labelElements.push(
             <foreignObject
-              className={`rv-force__label ${labelClass}`}
               key={`${forceUtils.nodeId(node)}-label`}
               x={nodePosition.cx + labelOffset.x(node)}
               y={nodePosition.cy + labelOffset.y(node)}
+              className={`rv-force__label ${labelClass}`}
+              fontSize={this.scale(fontSize)}
+              style={spreadableLabelStyle}
             >
               <p>{node[labelAttr]}</p>
             </foreignObject>
